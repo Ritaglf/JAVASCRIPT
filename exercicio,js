@@ -1,15 +1,20 @@
-var msg = document.getElementById('msg')
-var foto = document.getElementById('foto')
-var data = new Date()
-var hora = data.getHours()
-msg.innerHTML = `Agora são ${hora} horas.`
-if (hora >= 0 && hora < 12) {
-    // BOM DIA
-    Img.src = 'manha1.jpg'  
-} else if (hora >= 12 && hora > 18) {
-    // BOA TARDE
-    img.src = 'tarde1.jpg'
-} else {
-    // BOA NOITE
-    img.src = 'noite1.jpg'
+function carregar() {
+    var msg = document.getElementById('msg')
+    var img = document.getElementById('imagem')
+    var data = new Date()
+    //var hora = data.getHours()
+    var hora = 15 // teste mudança de hora acima hs real
+    msg.innerHTML = `Agora são ${hora} horas.`
+    if (hora >= 0 && hora < 12) {
+        // BOM DIA
+        img.src = 'manha1.jpg'  
+    } 
+    else if (hora >= 12 && hora < 18) {
+        // BOA TARDE
+        img.src = 'tarde1.jpg'
+    }
+    else {
+        // BOA NOITE
+        img.src = 'noite1.jpg'
+    }
 }
