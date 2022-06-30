@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+div {
+    display:inline-flex;
+    font-size: 50px;
+    border: 20px;
+    border-radius: 50px;
+    color: blue;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(185, 118, 118);
+    margin: 20px;
+    align-items:center
+
+
+
+}
